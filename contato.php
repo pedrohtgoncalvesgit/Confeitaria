@@ -18,9 +18,9 @@
                 <li class="dropdown">
                     Produtos
                     <div class="dropdown-content">
-                        <a href="#">Bolos</a>
-                        <a href="#">Doces</a>
-                        <a href="#">Pães</a>
+                        <a href="Bolos.php">Bolos</a>
+                        <a href="Doces.php">Doces</a>
+                        <a href="Paes.php">Pães</a>
                     </div>
                 </li>
                 <li><a href="#">Sobre</a></li>
