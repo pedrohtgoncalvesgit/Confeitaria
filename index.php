@@ -11,7 +11,7 @@
 <!-- header -->
 <header>
         <div class="logo">
-            <img src="IMG/Confeitaria_do_Pedrão_-removebg-preview.png"  alt="Confeitaria Delícia" />
+           <a href="index.php"> <img src="IMG/Confeitaria_do_Pedrão_-removebg-preview.png"  alt="Confeitaria Delícia" />
         </div>
         <nav>
             <ul>
@@ -25,7 +25,7 @@
                 </li>
                 <li><a href="#">Sobre</a></li>
                 <li><a href="contato.php">Contato</a></li>
-                <li><a href="#" class="login">Login</a></li>
+                <li><a href="login.php" class="login">Login</a></li>
             </ul>
         </nav>
     </header>

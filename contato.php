@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="pt-br" id="subir">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contato - Doceria Delícias</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contato - Doceria Doce Magia</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="CSS/styles.css">
 </head>
 <body>
-
-  <!-- header -->
 <header>
         <div class="logo">
             <img src="IMG/Confeitaria_do_Pedrão_-removebg-preview.png"  alt="Confeitaria Delícia" />
@@ -25,43 +25,37 @@
                 </li>
                 <li><a href="#">Sobre</a></li>
                 <li><a href="contato.php">Contato</a></li>
-                <li><a href="#" class="login">Login</a></li>
+                <li><a href="login.php" class="login">Login</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Section de Contato -->
-    <section id="contact" class="contact-section">
+    <section class="contact-section">
         <div class="contact-container">
-            <h1 class="contact-title">Estamos Aqui Para Você!</h1>
-            <p class="contact-description">
-                Sua opinião é muito importante para nós! Se você tem alguma dúvida, sugestão ou simplesmente
-                quer dizer o quanto ama nossos produtos, entre em contato! Estamos prontos para atendê-lo.
-            </p>
+            <h2 class="contact-title">Fale Conosco</h2>
+            <p class="contact-description">Adoramos ouvir nossos clientes! Deixe suas mensagens ou dúvidas, vamos adorar ajudar você.</p>
 
-            <!-- Formulário de Contato -->
-            <form class="contact-form" action="submit_form.php" method="POST">
+            <form id="contact-form" class="contact-form">
                 <div class="form-group">
-                    <label for="name">Seu Nome:</label>
-                    <input type="text" id="name" name="name" placeholder="Digite seu nome" required>
+                    <label for="name" class="form-label">Nome</label>
+                    <input type="text" id="name" name="name" required placeholder="Digite seu nome" class="form-input">
                 </div>
 
                 <div class="form-group">
-                    <label for="email">E-mail:</label>
-                    <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" id="email" name="email" required placeholder="Digite seu email" class="form-input">
                 </div>
 
                 <div class="form-group">
-                    <label for="message">Mensagem:</label>
-                    <textarea id="message" name="message" rows="5" placeholder="Escreva sua mensagem aqui..." required></textarea>
+                    <label for="message" class="form-label">Mensagem</label>
+                    <textarea id="message" name="message" rows="5" required placeholder="Escreva sua mensagem..." class="form-textarea"></textarea>
                 </div>
 
                 <button type="submit" class="submit-button">Enviar</button>
+                </div>
             </form>
-
-            
     </section>
-    <!-- RODAPÉ -->
+<!-- RODAPÉ -->
 <footer id="rodape">
     <div class="rodape-container">
         <div class="info">
@@ -86,11 +80,8 @@
                     width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
     </div>
-<a href="#subir">
-    <span class="quadradinhodasetinha">
-        <span class="material-symbols-outlined"><img src="IMG/upload.png" alt="" style="width: 15px;"></span>
-    </span>
-</a>
+    <p>&copy; 2024 Confeitaria do Pedrão. Todos os direitos reservados.</p>
 </footer>
+    <script src="JS/script.js"></script>
 </body>
 </html>

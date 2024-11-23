@@ -584,162 +584,124 @@ input {
         opacity: 1;
     }
 }
-/* ----------------- PAGINA DE CONTATO ---------------------------- */
-/* Estilos Gerais */
-body {
-    font-family: 'Arial', sans-serif;
+
+/* ------------  pagina de contato ------------------ */
+/* Reset geral */
+* {
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+    box-sizing: border-box;
 }
 
-/* Header */
-.header {
-    background-color: #FF6347;
-    color: white;
-    padding: 15px 0;
+body {
+    font-family: 'Raleway', sans-serif;
+    background-color: #fff2da;
+    color: #5d4e4e;
+    line-height: 1.6;
+}
+
+.header-doceria {
+    background-color: #f2d8d8;
+    padding: 30px 0;
     text-align: center;
-    font-size: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.header .logo {
-    font-weight: bold;
-    font-size: 2rem;
+.header-title {
+    font-family: 'Cookie', cursive;
+    font-size: 3.5rem;
+    color: #f5e8e8;
 }
 
-.header .nav a {
-    margin: 0 15px;
-    color: white;
-    text-decoration: none;
+.header-subtitle {
+    font-size: 1.2rem;
+    font-weight: 300;
 }
 
-.header .nav a:hover {
-    text-decoration: underline;
-}
-
-/* Seção de Contato */
 .contact-section {
     padding: 50px 20px;
-    text-align: center;
-    background-color: #fff;
+    background-color: fff2da;
+    animation: fadeIn 2s ease-in-out;
 }
 
 .contact-container {
-    width: 80%;
     max-width: 800px;
     margin: 0 auto;
+    text-align: center;
 }
 
 .contact-title {
-    font-size: 2rem;
-    color: #FF6347;
-    margin-bottom: 20px;
+    font-family: 'Cookie', cursive;
+    font-size: 2.5rem;
+    color: f8d1b2;
 }
 
 .contact-description {
     font-size: 1.1rem;
-    color: #555;
-    margin-bottom: 30px;
-    line-height: 1.6;
-}
-
-.contact-form {
-    background-color: #fafafa;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     margin-bottom: 30px;
 }
 
 .contact-form .form-group {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     text-align: left;
 }
 
-.contact-form label {
-    font-size: 1rem;
-    color: #333;
+.form-label {
+    font-size: 1.1rem;
+    font-weight: 600;
     display: block;
     margin-bottom: 5px;
 }
 
-.contact-form input,
-.contact-form textarea {
+.form-input, .form-textarea {
     width: 100%;
     padding: 10px;
+    border: 2px solid 9c5a43;
+    border-radius: 8px;
     font-size: 1rem;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    margin-bottom: 10px;
+    transition: border-color 0.3s ease;
 }
 
-.contact-form textarea {
-    resize: vertical;
+.form-input:focus, .form-textarea:focus {
+    border-color: #9c5a43;
+    outline: none;
 }
 
 .submit-button {
-    background-color: #FF6347;
+    padding: 12px 30px;
+    background-color: #9c5a43;
     color: white;
     border: none;
-    padding: 12px 20px;
-    font-size: 1.1rem;
+    border-radius: 8px;
+    font-size: 1.2rem;
     cursor: pointer;
-    border-radius: 5px;
-    width: 100%;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s ease;
 }
 
 .submit-button:hover {
-    background-color: #FF4500;
+    background-color: #9c5a43;
 }
 
-/* Informações de Contato */
-.contact-info {
-    background-color: #f8f8f8;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-.contact-info h2 {
-    color: #333;
-    margin-bottom: 15px;
-}
-
-.contact-info ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.contact-info ul li {
-    font-size: 1rem;
-    margin-bottom: 10px;
-}
-
-/* Footer */
-.footer {
-    background-color: #333;
-    color: white;
+.footer-doceria {
+    background-color: #f2d8d8;
     text-align: center;
-    padding: 15px;
-    margin-top: 50px;
+    padding: 20px;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    font-size: 1rem;
 }
 
-.footer p {
-    margin: 0;
+.footer-text {
+    color: #5d4e4e;
 }
 
-/* Responsividade */
-@media (max-width: 768px) {
-    .contact-container {
-        width: 90%;
+/* Animações */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
     }
-
-    .header .nav {
-        font-size: 1rem;
+    100% {
+        opacity: 1;
     }
 }
-
-
-

@@ -39,3 +39,72 @@ function confirmPayment() {
     alert('Pagamento confirmado! Agradecemos pela sua compra!');
     closeModal();
 }
+
+// LOGIN
+// Função para alternar entre os formulários
+function showForm(formType) {
+    // Esconder todos os formulários
+    document.getElementById('user-form').style.display = 'none';
+    document.getElementById('user-register').style.display = 'none';
+    document.getElementById('admin-form').style.display = 'none';
+    document.getElementById('admin-register').style.display = 'none';
+    
+    // Mostrar o formulário selecionado
+    if (formType === 'login') {
+        document.getElementById('user-form').style.display = 'block';
+    } else if (formType === 'register') {
+        document.getElementById('user-register').style.display = 'block';
+    } else if (formType === 'admin-login') {
+        document.getElementById('admin-form').style.display = 'block';
+    } else if (formType === 'admin-register') {
+        document.getElementById('admin-register').style.display = 'block';
+    }
+}
+
+// Função para verificar se as senhas coincidem
+function verifyPasswords(password, confirmPassword) {
+    if (password !== confirmPassword) {
+        alert("As senhas não coincidem. Tente novamente.");
+        return false;
+    }
+    return true;
+}
+
+// Exemplo de verificação de e-mail e senhas ao enviar o formulário
+document.getElementById('user-register-form').addEventListener('submit', function(event) {
+    const email = document.getElementById('user-register-email').value;
+    const password = document.getElementById('user-register-password').value;
+    const confirmPassword = document.getElementById('user-register-confirm-password').value;
+
+    if (!verifyPasswords(password, confirmPassword)) {
+        event.preventDefault();
+    }
+});
+
+document.getElementById('admin-register-form').addEventListener('submit', function(event) {
+    const email = document.getElementById('admin-register-email').value;
+    const password = document.getElementById('admin-register-password').value;
+    const confirmPassword = document.getElementById('admin-register-confirm-password').value;
+
+    if (!verifyPasswords(password, confirmPassword)) {
+        event.preventDefault();
+    }
+});
+
+/// CONTATO 
+// Efeito de animação no botão de envio
+const form = document.getElementById('contact-form');
+const submitButton = document.querySelector('.submit-button');
+
+form.addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    // Mostrar efeito no botão de envio
+    submitButton.style.backgroundColor = '#f28ca6';
+    submitButton.innerHTML = 'Enviado!';
+
+    setTimeout(() => {
+        submitButton.innerHTML = 'Enviar';
+        submitButton.style.backgroundColor = '#e86a85';
+    }, 2000);
+});
